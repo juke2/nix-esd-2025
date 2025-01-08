@@ -6,19 +6,19 @@ The purpose of this repository is to provide nix installation instructions and c
 
 ### 1. Update WSL (Windows Subsystem for Linux) to the latest version
 
-    Open a powershell instance with administrator permissions and run the following command:
+Open a powershell instance with administrator permissions and run the following command:
 
-    ```
-    wsl --update
-    ```
+```
+wsl --update
+```
 
-    This should update your WSL the latest version.
+This should update your WSL the latest version.
 
 ### 2. Download and Install NixOS
 
-    Download the latest NixOS-WSL binary from the [NixOS-WSL github][https://github.com/nix-community/NixOS-WSL/releases]. It will be the file called "nixos-wsl.tar.gz".
+Download the latest NixOS-WSL binary from the [NixOS-WSL github][https://github.com/nix-community/NixOS-WSL/releases]. It will be the file called "nixos-wsl.tar.gz".
 
-    Download the file and open a windows powershell instance with administrator permissions. Navigate to the directory where the downloaded file is contained (should be in C:/users/{user name}/downloads) and run the following commands:
+Download the file and open a windows powershell instance with administrator permissions. Navigate to the directory where the downloaded file is contained (should be in C:/users/{user name}/downloads) and run the following commands:
 
 ```
 wsl --import NixOS $env:USERPROFILE\NixOS\ nixos-wsl.tar.gz --version 2
